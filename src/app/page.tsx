@@ -1,9 +1,25 @@
+import { Header } from "@/components/layout/header";
+import { Hero } from "@/components/sections/hero";
+import { ProblemSolutionResult } from "@/components/sections/problem-solution-result";
+import { Problem } from "@/components/sections/problem";
+import { Tech } from "@/components/sections/tech";
+import { Economics } from "@/components/sections/economics";
+import { Contacts } from "@/components/sections/contacts";
+import { Footer } from "@/components/layout/footer";
+
 export default function Home() {
   return (
-    <div className="flex flex-1 items-center justify-center">
-      <main className="flex flex-col items-center gap-4 px-6 py-32 text-center">
-        <h1 className="text-3xl font-semibold tracking-tight">Svinki</h1>
+    <>
+      <Header />
+      <main>
+        <Hero />
+        <ProblemSolutionResult />
+        <Problem />
+        <Tech />
+        <Economics />
+        <Contacts />
       </main>
-    </div>
+      <Footer />
+    </>
   );
 }
