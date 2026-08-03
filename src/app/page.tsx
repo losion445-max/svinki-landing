@@ -4,6 +4,8 @@ import { ProblemSolutionResult } from "@/components/sections/problem-solution-re
 import { Problem } from "@/components/sections/problem";
 import { Tech } from "@/components/sections/tech";
 import { Economics } from "@/components/sections/economics";
+import { Contacts } from "@/components/sections/contacts";
+import { Footer } from "@/components/layout/footer";
 
 export default function Home() {
   return (
@@ -15,7 +17,9 @@ export default function Home() {
         <Problem />
         <Tech />
         <Economics />
+        <Contacts />
       </main>
+      <Footer />
     </>
   );
 }
