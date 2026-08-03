@@ -1,0 +1,6 @@
+services:
+  web:
+    image: ghcr.io/losion445-max/svinki-landing:latest
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
