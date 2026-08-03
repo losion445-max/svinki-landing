@@ -36,6 +36,9 @@ yarn-error.log*
 # vercel
 .vercel
 
+# scratch space for inspecting incoming files (partner zips, etc.) - never committed
+/temp
+
 # typescript
 *.tsbuildinfo
 next-env.d.ts
