@@ -12,15 +12,18 @@ export function Header() {
     <header className="sticky top-0 z-50 border-b border-border bg-background/80 backdrop-blur-md">
       <Container>
         <div className="flex items-center justify-between gap-4 py-3 sm:py-4">
-          <a href="#top" className="flex items-center text-foreground">
+          <a href="#top" className="flex items-center gap-3 text-foreground">
             <Image
-              src="/logo-lockup.png"
+              src="/logo.jpg"
               alt="АгроМонитор"
-              width={140}
-              height={28}
+              width={56}
+              height={56}
               priority
-              className="h-7 w-auto sm:h-8"
+              className="h-11 w-11 rounded-lg sm:h-12 sm:w-12 md:h-14 md:w-14"
             />
+            <span className="text-lg font-semibold tracking-tight sm:text-xl">
+              АгроМонитор
+            </span>
           </a>
 
           <nav className="hidden items-center gap-7 text-sm text-muted md:flex">
