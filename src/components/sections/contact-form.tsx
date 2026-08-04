@@ -18,7 +18,7 @@ export function ContactForm() {
         <input
           type="text"
           name="name"
-          className="rounded-xl border border-[#E2E2E7] bg-background px-4 py-3.5 text-foreground"
+          className="rounded-xl border border-border bg-background px-4 py-3.5 text-foreground"
         />
       </label>
       <label className="grid gap-2">
@@ -26,7 +26,7 @@ export function ContactForm() {
         <input
           type="text"
           name="contact"
-          className="rounded-xl border border-[#E2E2E7] bg-background px-4 py-3.5 text-foreground"
+          className="rounded-xl border border-border bg-background px-4 py-3.5 text-foreground"
         />
       </label>
       <label className="grid gap-2">
@@ -34,12 +34,12 @@ export function ContactForm() {
         <textarea
           name="details"
           rows={4}
-          className="resize-y rounded-xl border border-[#E2E2E7] bg-background px-4 py-3.5 text-foreground"
+          className="resize-y rounded-xl border border-border bg-background px-4 py-3.5 text-foreground"
         />
       </label>
       <button
         type="submit"
-        className="cursor-pointer rounded-full bg-foreground px-6 py-3.5 font-medium text-white hover:text-white/85"
+        className="cursor-pointer rounded-full bg-foreground px-6 py-3.5 font-medium text-background hover:text-background/85"
       >
         {sent ? "Заявка отправлена" : "Отправить заявку"}
       </button>

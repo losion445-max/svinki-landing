@@ -25,7 +25,7 @@ export function Hero() {
   return (
     <section
       id="top"
-      className="bg-gradient-to-b from-white to-[#FAFAFB] px-5 py-16 text-center sm:px-8 sm:py-24 md:py-28"
+      className="bg-gradient-to-b from-background to-surface px-5 py-16 text-center sm:px-8 sm:py-24 md:py-28"
     >
       <Container>
         <div className="mx-auto max-w-[940px]">

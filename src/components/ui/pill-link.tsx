@@ -1,5 +1,5 @@
 const variants = {
-  solid: "bg-foreground text-white hover:text-white/85",
+  solid: "bg-foreground text-background hover:text-background/85",
   accent: "bg-accent text-white hover:bg-accent-hover hover:text-white",
   outline: "border border-border text-foreground hover:border-foreground",
 };
