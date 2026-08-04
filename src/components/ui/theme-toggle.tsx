@@ -5,6 +5,9 @@ export function ThemeToggle() {
     const next = !document.documentElement.classList.contains("dark");
     document.documentElement.classList.toggle("dark", next);
     localStorage.setItem("theme", next ? "dark" : "light");
+    document
+      .querySelector('meta[name="theme-color"]')
+      ?.setAttribute("content", next ? "#121212" : "#ffffff");
   }
 
   return (
