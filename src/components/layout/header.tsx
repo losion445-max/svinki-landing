@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { Container } from "@/components/ui/container";
+import { ThemeToggle } from "@/components/ui/theme-toggle";
 
 const navLinks = [
   { href: "#problem", label: "Проблема" },
@@ -34,12 +35,15 @@ export function Header() {
             ))}
           </nav>
 
-          <a
-            href="#contacts"
-            className="inline-flex items-center rounded-full bg-foreground px-4 py-2 text-sm font-medium text-white hover:text-white/85 sm:px-5"
-          >
-            Связаться
-          </a>
+          <div className="flex items-center gap-2 sm:gap-3">
+            <ThemeToggle />
+            <a
+              href="#contacts"
+              className="inline-flex items-center rounded-full bg-foreground px-4 py-2 text-sm font-medium text-background hover:text-background/85 sm:px-5"
+            >
+              Связаться
+            </a>
+          </div>
         </div>
       </Container>
     </header>

@@ -102,17 +102,17 @@ export function Problem() {
                     className={row.highlight ? "bg-positive-surface" : ""}
                   >
                     <td
-                      className={`px-6 py-5 ${row.highlight ? "font-semibold text-positive-text" : "border-b border-[#F1F1F4] font-medium"}`}
+                      className={`px-6 py-5 ${row.highlight ? "font-semibold text-positive-text" : "border-b border-border font-medium"}`}
                     >
                       {row.approach}
                     </td>
                     <td
-                      className={`px-6 py-5 ${row.highlight ? "text-foreground" : "border-b border-[#F1F1F4] text-muted"}`}
+                      className={`px-6 py-5 ${row.highlight ? "text-foreground" : "border-b border-border text-muted"}`}
                     >
                       {row.coverage}
                     </td>
                     <td
-                      className={`px-6 py-5 ${row.highlight ? "text-muted" : "border-b border-[#F1F1F4] text-muted"}`}
+                      className={`px-6 py-5 ${row.highlight ? "text-muted" : "border-b border-border text-muted"}`}
                     >
                       {row.limitation}
                     </td>
