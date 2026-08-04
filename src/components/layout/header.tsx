@@ -14,12 +14,12 @@ export function Header() {
         <div className="flex items-center justify-between gap-4 py-3 sm:py-4">
           <a href="#top" className="flex items-center gap-3 text-foreground">
             <Image
-              src="/logo.jpg"
+              src="/logo.png"
               alt="АгроМонитор"
               width={56}
               height={56}
               priority
-              className="h-11 w-11 rounded-lg sm:h-12 sm:w-12 md:h-14 md:w-14"
+              className="h-11 w-11 sm:h-12 sm:w-12 md:h-14 md:w-14"
             />
             <span className="text-lg font-semibold tracking-tight sm:text-xl">
               АгроМонитор
