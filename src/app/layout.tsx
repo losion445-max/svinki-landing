@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Golos_Text, IBM_Plex_Mono } from "next/font/google";
 import "./globals.css";
 
@@ -20,7 +20,11 @@ export const metadata: Metadata = {
     "АгроМонитор — роботизированная тросовая система тепловизионного мониторинга здоровья животных для закрытых животноводческих комплексов.",
 };
 
-const themeInitScript = `(function(){try{var s=localStorage.getItem("theme");var d=s?s==="dark":window.matchMedia("(prefers-color-scheme: dark)").matches;if(d)document.documentElement.classList.add("dark");}catch(e){}})();`;
+export const viewport: Viewport = {
+  themeColor: "#ffffff",
+};
+
+const themeInitScript = `(function(){try{var s=localStorage.getItem("theme");var d=s?s==="dark":window.matchMedia("(prefers-color-scheme: dark)").matches;if(d){document.documentElement.classList.add("dark");var m=document.querySelector('meta[name="theme-color"]');if(m)m.setAttribute("content","#121212");}}catch(e){}})();`;
 
 export default function RootLayout({
   children,
