@@ -56,7 +56,7 @@ function DiagramPlaceholder({
   return (
     <figure className="m-0">
       <div
-        className={`flex items-center justify-center rounded-[18px] bg-surface bg-[repeating-linear-gradient(135deg,rgba(26,26,28,0.05)_0_1px,transparent_1px_10px)] p-5 text-center ${ratio}`}
+        className={`flex items-center justify-center rounded-[18px] bg-surface bg-[repeating-linear-gradient(135deg,rgba(26,26,28,0.05)_0_1px,transparent_1px_10px)] p-5 text-center dark:bg-[repeating-linear-gradient(135deg,rgba(255,255,255,0.06)_0_1px,transparent_1px_10px)] ${ratio}`}
       >
         <span className="font-mono text-xs tracking-wide text-muted-2">
           {caption}
